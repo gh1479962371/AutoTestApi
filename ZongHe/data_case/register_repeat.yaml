@@ -1,0 +1,8 @@
+- casedata: {'mobilephone': '15191871634', 'pwd': 123456, 'regname': 'hello'}
+  expect: {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+
+- casedata: {'mobilephone': 15191871633, 'pwd': 123456789123456789, 'regname': 'hello'}
+  expect: {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
+
+- casedata: {'mobilephone': 15191871632, 'pwd': 123456789,'regname': None}
+  expect: {'status': 0, 'code': '20110', 'data': None, 'msg': '手机号码已被注册'}
